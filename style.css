@@ -1,0 +1,232 @@
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #222; /* Dark background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.navbar-brand img {
+    width: 120px; 
+    height: auto;
+}
+
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.navbar-nav .nav-link:hover {
+    color: #ffcc00; 
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+
+.navbar-nav .nav-link:active {
+    color: #ff6600;
+}
+
+/* Mobile Toggle Button */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Make Navbar Responsive */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        background-color: #222; /* Keep background for mobile */
+        padding: 10px 0;
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+    }
+}
+
+
+/* abou me */
+/* Center the project card */
+.project-card {
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #ffffff, #e0e0e0);
+}
+
+/* Title Styling */
+.project-card .card-title {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Description Text */
+.project-card .card-text {
+    color: #555;
+    font-size: 16px;
+}
+
+
+/* Center the project card */
+.project-card {
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #ffffff, #e0e0e0);
+}
+
+/* Title Styling */
+.project-card .card-title {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Description Text */
+.project-card .card-text {
+    color: #555;
+    font-size: 16px;
+}
+
+
+
+#contact{
+    background-color: #9f9e9e;
+    color: whitesmoke;
+    place-items: center;
+}
+
+.social{
+    place-items: center;
+    
+}
+.social-icons {
+    display: grid;
+    align-items: center;
+}
+.wrapper{
+    display: inline-flex;
+    list-style: none;
+    
+    
+}
+.wrapper .icon{
+    position: relative;
+    background: #f3ab03 ;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+.wrapper .tooltip{
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #010101;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before{
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ebbd03;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip{
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip
+.wrapper.facebook:hover .tooltip::before{
+    background: #1877F2;
+    color: #fff;
+
+}
+.wrapper .whatsapp:hover,
+.wrapper .whatsapp:hover .tooltip
+.wrapper.whatsapp:hover .tooltip::before{
+    background: #E4405f;
+    color: #fff;
+    
+}
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip
+.wrapper.github:hover .tooltip::before{
+    background: #cd201F;
+    color: #fff;
+    
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip
+.wrapper.instagram:hover .tooltip::before{
+    background: #cd201F;
+    color: #fff;
+    
+}
+
+.wrapper .email:hover,
+.wrapper .email:hover .tooltip
+.wrapper.email:hover .tooltip::before{
+    background: #cd201F;
+    color: #fff;
+    
+}
